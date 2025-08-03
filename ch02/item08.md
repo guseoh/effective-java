@@ -77,7 +77,7 @@ public class Room implements AutoCloseable {
 
 1. **즉시 수행된다는 보장이 없다.**
    - 객체에 접근할 수 없게 된 후 finalizer와 cleaner는 실행되기까지 얼마나 걸릴지 알 수 없다.
-   - 즉, finalizer와 cleaner로는 제댸 실행되어야 하는 작업을 절때 할 수 없다.
+   - 즉, finalizer와 cleaner로는 제때 실행되어야 하는 작업을 절대 할 수 없다.
 2. **이식성 문제**
    - 가비지 컬렉션의 작동 방식은 JVM의 구현에 따라 다르기 때문에, 서로 다른 JVM에서는 finalizer의 동작이 달라질 수 있다.
    - 그러므로 테스트한 JVM에서는 잘 작동해도 운영시점의 시스템에서는 작동하지 않을 수 있다.
