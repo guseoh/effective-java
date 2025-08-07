@@ -119,6 +119,8 @@ public class Stack implements Cloneable {
 이는 super.clone()이 기본적으로 얕은 복사를 수행하기 때문입니다. 
 이러한 문제를 해결하고 가변 객체의 값을 정확히 복사하려면, clone() 메서드를 재정의하여 elements 필드에 대한 깊은 복사 로직을 직접 구현해야 합니다.
 
+- **얕은 복사:** 객체 자체만 복사하고, 객체 내부에 있는 참조 타입 필드는 참조 주소만 복사
+- **깊은 복사:** 객체 자체는 물론, 객체 내부에 있는 모든 참조 타입 필드까지 모두 복사
 ```java
 @Override 
 public Stack clone() {
