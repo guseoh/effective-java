@@ -1,7 +1,7 @@
 ### ✅ toString을 항상 재정의하라
 
 ## 1. toString() 메서드
-***
+
 
 `Object` 내에 속한 기본 `toString` 메서드는 우리가 작성한 클래스에 적합한 문자열을 반환하는 경우가 거의 없다.
 
@@ -16,7 +16,7 @@
 객체를 println, printf, 문자열 연결 연산자(+), assert 구문에 넘길 때 혹은 디버거가 객체를 출력할 때 자동으로 불린다.
 
 ## 2. 좋은 toString() 작성 요령
-***
+
 
 **1. 객체가 가진 주요 정보를 모두를 반환하는 게 좋다.**
 
@@ -85,7 +85,7 @@ String name = user.getName(); // toString 대신 공식 API로 접근
 ```
 
 ## 3. toString 재정의가 필요 없는 경우
-***
+
 
 정적 유틸리티 클래스는 상태를 가지지 않고, 인스턴스를 만들 수 없으므로 `toString`을 제공할 이유가 없다.
 
@@ -94,7 +94,7 @@ String name = user.getName(); // toString 대신 공식 API로 접근
 하지만 히위 클래스들이 공유해야 할 문자열 표현이 있는 추상 클래스라면 코드 재사용성과 일관된 출력 형식을 위해 `toString`을 재정의해줘야 한다.
 
 ## 4. 정리
-***
+
 
 1. 모든 구체 클래스에서 `Object`의 `toString`을 재정의하자.
     - 상위 클래스에서 이미 재정의한 경우 예외
@@ -102,7 +102,7 @@ String name = user.getName(); // toString 대신 공식 API로 접근
 3. `toString`은 해당 객체에 관한 명확하고 유용한 저옵를 읽기 좋은 형태로 반환해야 한다.
 
 ### 번외 1. [AutoValue](https://www.baeldung.com/introduction-to-autovalue)
-***
+
 
 - `AutoValue` 는 Google 에서 개발한 코드 자동 생성기로 자바 코드를 줄이는 데 기여한다.
 - Reflection 방식을 이용한 런타임 방식이 아닌 apt를 이용하여 컴파일 타임에 코드를 생성한다.
@@ -133,6 +133,6 @@ abstract class Person {
 </details>
 
 ### 번외 2. [Lombok @ToString](https://www.baeldung.com/lombok-tostring)
-***
+
 - 자바에서 반복되는 소스 코드를 컴파일 과정에서 생성해주는 라이브러리이다.
 - `@ToString` 어노테이션을 통해 코드를 작성할 수 있다.
