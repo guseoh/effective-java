@@ -29,34 +29,88 @@
 즉, **자식 클래스가 부모의 “구현 세부사항”을 의존해서 설계되는 순간, 부모 클래스의 내부 변경이 자식 클래스의 동작에 직접 영향을 미치게 된다.**
 
 <details>
-    <summary>예시 코드</summary>
+    <summary>예제</summary>
 <div markdown="1">
 
 ```java
-class Animal {
-    public void makeSound() {
-        System.out.println("Animal is making a sound.");
-    }
-}
+// 로또 번호를 가지는 역할인 Lotto 클래스
+public class Lotto {
+    protected List<Integer> lottoNumbers;
 
-class Dog extends Animal {
-    public void makeSound() {
-        System.out.println("Dog is barking.");
+    public Lotto(List<Integer> lottoNumbers) {
+        this.lottoNumbers = new ArrayList<>(lottoNumbers);
     }
-}
 
-class Main {
-    public static void main(String[] args) {
-        Animal animal = new Dog();
-        animal.makeSound(); // 출력: "Dog is barking."
+    public  boolean contains(Integer integer) {
+        return this.lottoNumbers.contains(integer);
+    }
+    ...
+}
+```
+- `Lotto` 클래스는 로또 번호를 `List<Integer>`로 가지고 있다.
+
+```java
+// Lotto 클래스를 상속하는 WinningLotto 클래스
+// WinningLotto 클래스는 당첨 로또번호를 가지고 있는 클래스
+public class WinningLotto extends Lotto {
+    private final BonusBall bonusBall;
+
+    public WinningLotto(List<Integer> lottoNumbers, BonusBall bonusBall) {
+        super(lottoNumbers);
+        this.bonusBall = bonusBall;
+    }
+
+    public long compare(Lotto lotto) {
+        return lottoNumbers.stream()
+            .filter(lotto::contains)
+            .count();
+    }
+    ...
+}
+```
+- 현재까지는 문제가 없어 보인다.
+
+```java
+// List<Integer> lottoNumbers -> int[] lottoNumbers
+public class Lotto {
+    protected int[] lottoNumbers;
+
+    public Lotto(int[] lottoNumbers) {
+        this.lottoNumbers = lottoNumbers;
+    }
+
+    public boolean contains(Integer integer) {
+        return Arrays.stream(lottoNumbers)
+            .anyMatch(lottoNumber -> Objects.equals(lottoNumber, integer));
+    }
+    ...
+}
+```
+```java
+public class WinningLotto extends Lotto {
+    private final BonusBall bonusBall;
+
+    // 오류가 발생한다.
+    public WinningLotto(List<Integer> lottoNumbers, BonusBall bonusBall) {
+        super(lottoNumbers);
+        this.bonusBall = bonusBall;
+    }
+
+    // 오류가 발생한다.
+    public long compare(Lotto lotto) {
+        return lottoNumbers.stream()
+            .filter(lotto::contains)
+            .count();
     }
 }
 ```
-- `Dog`는 `Animal`을 상속 받는다. `Animal`이라는 클래스는 `makeSound`라는 소리르르내는 기능("Animal is making a sound.")이 존재한다.
-- `Dog`는 `Animal` 클래스를 상속받고 `Dog` 클래스에서 **부모 메서드를 재정의(Override)**하면 기존의 부모 메서드 기능은 사라진다.
-- 이런 경우 하나의 캡슐로 만들어놓은 **부모 클래스의 기능이 새로운 기능으로 대체**되었기 때문에 캡슐화가 깨졌다고 볼 수 있다.
+- Lotto 클래스를 상속한 하위 클래스가 몇 개가 있든 전부 깨지게 된다.
+  - 해결법은 **모든 하위 클래스에서 일일이 수정을 해주는 방법** 뿐 이다.
+
 </div>
 </details>
+
+<br>
 
 ## 2. 상속이 깨지기 쉬운 이유
 
@@ -119,6 +173,8 @@ s.addall(List.of("틱", "탁탁", "펑"));
 만약 상위 클래스에 새 메서드가 추가됐는데, 하위 클래스에 추가한 메서드와 시그니처가 같고 반환 타입은 다르다면 해당 클래스는 컴파일조차 되지 않는다.
 
 혹은 반환 타입마저 같다면 상위 클래스의 새 메서드를 재정의한 꼴이니 앞선 문제와 똑같은 상황에 부닥친다.
+
+<br>
 
 ## 3. 컴포지션을 활용하여 문제 해결하기
 
@@ -252,6 +308,8 @@ static void walk(Set<Dog> dogs) {
 
 따라서 콜백 구조에서 래퍼를 사용할 때는, 반드시 래퍼 자신을 외부에 넘기거나, 콜백 경로에서 우회 호출이 발생하지 않도록 설계해야 한다.
 
+<br>
+
 ### 3.4 전달 메서드의 성능 우려
 
 일부 개발자들은 래퍼 클래스의 전달(위임) 방식이 성능과 메모리 사용에 영향을 줄 수 있다고 걱정한다.
@@ -263,6 +321,7 @@ JVM 최적화(JIT 인라이닝)로 인해 메서드 호출 계층이 줄어드�
 오히려 유일한 단점은 전달 메서드를 일일이 작성해야 하는 번거로움인데, 이마자도 재사용 가능한 ‘전달 전용 클래스’를 만들어 두면 쉽게 해결할 수 있다.
 
 실제로 구글의 Guava 라이브러리에는 모든 컬렉션 인터페이스에 대한 전달 클래스를 구현해 둔 예시가 있다.
+
 
 ## 4. 상속의 원칙과 is-a 관계
 
