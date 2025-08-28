@@ -95,7 +95,7 @@ public class MyStack<E> {
 
 제네릭을 적용할 때 일반적으로 오류나 경고가 하나 이상 발생하는데 해당 예시에서는 제네릭 클래스에서`E[] elements = new E[DEFAULT_INITIAL_CAPACITY]`와 같이 직접 제네릭 타입의
 배열을 생성하는 것은 불가능합니다.
-이는 런타임에 타입 정보가 지워지는 자바의 제네릭 구현 방식(Type Erasure) 때문입니다.
+이는 런타임에 타입 정보가 지워지는 [자바의 제네릭 구현 방식(Type Erasure)](https://stackoverflow.com/questions/520527/why-do-some-claim-that-javas-implementation-of-generics-is-bad?utm_source=chatgpt.com) 때문입니다.
 
 아래 사진과 같은 하나의 컴파일 오류만 발생했습니다.
 <img width="761" height="127" alt="Image" src="https://github.com/user-attachments/assets/5ba89c5f-39a4-4d78-bfc4-28e023af2811" />
