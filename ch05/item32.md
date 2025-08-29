@@ -181,7 +181,7 @@ static <T> List<T> flatten_typesafe(List<List<? extends T>> lists){
         result.addAll(list);
     }
     return result;
-    }
+}
 ```
 </div>
 </details>
