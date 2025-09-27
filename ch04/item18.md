@@ -107,6 +107,14 @@ public class WinningLotto extends Lotto {
 - Lotto 클래스를 상속한 하위 클래스가 몇 개가 있든 전부 깨지게 된다.
   - 해결법은 **모든 하위 클래스에서 일일이 수정을 해주는 방법** 뿐 이다.
 
+<details>
+    <summary></summary>
+<div markdown="1">
+
+</div>
+</details>
+
+
 </div>
 </details>
 
