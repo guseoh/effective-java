@@ -131,11 +131,11 @@ public class StaticSingleton {
 
 ```java
 public enum Elvis {
-  INSTANCE;
+    INSTANCE;
 
-  public void leaveTheBuilding() {
-    // ...
-  }
+    public void leaveTheBuilding() {
+        // ...
+    }
 }
 ```
 
