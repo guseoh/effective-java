@@ -79,7 +79,7 @@ public class Book2 {
 자바 8에 도입된 `Supplier` 인터페이스는 팩토리 메소드 패턴을 활용하여 주입 관련 로직을 구성에 대해 다양한 기능을 제공합니다.(리소스 지연 관리 등등)
 
 ```java
-Mosaic create(Supplier<? extends Tile> tileFactory) {..}
+Mosaic create(Supplier<? extends Tile> tileFactory) {...}
 ```
 
 ### 정리
