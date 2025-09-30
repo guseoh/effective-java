@@ -8,17 +8,17 @@
 
 ## 2장. 객체 생성과 파괴
 
-| 아이템                                                                                                      | 담당자                                                                          | 질문 여부 |
-|:---------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------|:------|
-| [아이템 1. 생성자 대신 정적 팩터리 메서드를 고려하라](https://github.com/peeljunKim/effective-java/issues/38)                 | [김필준](https://github.com/peeljunKim/effective-java/blob/main/ch02/item01.md) | O     |
-| [아이템 2. 생성자에 매개변수가 많다면 빌더를 고려하라](https://github.com/peeljunKim/effective-java/issues/39)                 | [오지훈](https://github.com/peeljunKim/effective-java/blob/main/ch02/item02.md) | x     |
-| [아이템 3. private 생성자나 열거 타입으로 싱글턴임을 보증하라](https://github.com/peeljunKim/effective-java/issues/40)         | [김필준](https://github.com/peeljunKim/effective-java/blob/main/ch02/item03.md) | O     |
-| [아이템 4. 인스턴스화를 막으려거든 private 생성자를 사용하라](https://github.com/peeljunKim/effective-java/issues/41)          | [오지훈](https://github.com/peeljunKim/effective-java/blob/main/ch02/item04.md) | O     |
-| [아이템 5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](https://github.com/peeljunKim/effective-java/issues/42)           | [김필준](https://github.com/peeljunKim/effective-java/blob/main/ch02/item05.md) | O     |
-| [아이템 6. 불필요한 객체 생성을 피하라](https://github.com/peeljunKim/effective-java/issues/43)                         | [오지훈](https://github.com/peeljunKim/effective-java/blob/main/ch02/item06.md) | O     |
-| [아이템 7. 다 쓴 객체 참조를 해제하라](https://github.com/peeljunKim/effective-java/issues/44)                         | [김필준](https://github.com/peeljunKim/effective-java/blob/main/ch02/item07.md) | O     |
-| [아이템 8. finalizer와 cleaner 사용을 피하라](https://github.com/peeljunKim/effective-java/issues/45)              | [오지훈](https://github.com/peeljunKim/effective-java/blob/main/ch02/item08.md) | x     |
-| [아이템 9. try-finally보다는 try-with-resources를 사용하라](https://github.com/peeljunKim/effective-java/issues/46) | [김필준](https://github.com/peeljunKim/effective-java/blob/main/ch02/item09.md) | O     |
+| 아이템                                                                                                           | 담당자                                                                          | 질문 여부 |
+|:--------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------|:------|
+| [아이템 1. 생성자 대신 정적 팩터리 메서드를 고려하라](https://github.com/peeljunKim/effective-java/discussions/49)                 | [김필준](https://github.com/peeljunKim/effective-java/blob/main/ch02/item01.md) | O     |
+| [아이템 2. 생성자에 매개변수가 많다면 빌더를 고려하라](https://github.com/peeljunKim/effective-java/discussions/53)                 | [오지훈](https://github.com/peeljunKim/effective-java/blob/main/ch02/item02.md) | x     |
+| [아이템 3. private 생성자나 열거 타입으로 싱글턴임을 보증하라](https://github.com/peeljunKim/effective-java/discussions/51)         | [김필준](https://github.com/peeljunKim/effective-java/blob/main/ch02/item03.md) | O     |
+| [아이템 4. 인스턴스화를 막으려거든 private 생성자를 사용하라](https://github.com/peeljunKim/effective-java/discussions/57)          | [오지훈](https://github.com/peeljunKim/effective-java/blob/main/ch02/item04.md) | O     |
+| [아이템 5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](https://github.com/peeljunKim/effective-java/discussions/54)           | [김필준](https://github.com/peeljunKim/effective-java/blob/main/ch02/item05.md) | x     |
+| [아이템 6. 불필요한 객체 생성을 피하라](https://github.com/peeljunKim/effective-java/discussions/58)                         | [오지훈](https://github.com/peeljunKim/effective-java/blob/main/ch02/item06.md) | O     |
+| [아이템 7. 다 쓴 객체 참조를 해제하라](https://github.com/peeljunKim/effective-java/discussions/55)                         | [김필준](https://github.com/peeljunKim/effective-java/blob/main/ch02/item07.md) | O     |
+| [아이템 8. finalizer와 cleaner 사용을 피하라](https://github.com/peeljunKim/effective-java/discussions/59)              | [오지훈](https://github.com/peeljunKim/effective-java/blob/main/ch02/item08.md) | x     |
+| [아이템 9. try-finally보다는 try-with-resources를 사용하라](https://github.com/peeljunKim/effective-java/discussions/56) | [김필준](https://github.com/peeljunKim/effective-java/blob/main/ch02/item09.md) | O     |
 
 ## 3장. 모든 객체의 공통 메서드
 
