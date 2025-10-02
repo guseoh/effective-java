@@ -40,7 +40,7 @@ static int sum(int firstNumber, int... numbers) {
 }
 
 public static void main(String[] args) {
-    sum(1, 2);
+    sum(1, 2); // 내부적으로 컴파일러가 sum(new int[]{2})으로 변환해줌
     sum(1);
     sum(); // 컴파일 에러 발생    
 }
