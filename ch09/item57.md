@@ -34,7 +34,7 @@ for문에서 지역 변수는 for문 블록문 괄호 안으로 제한됩니다.
 
 
 <details>
-    <summary>익명 클래스의 인스턴스를 함수 객체로 사용 - 낡은 기법이다!</summary>
+    <summary>더보기</summary>
 <div markdown="1">
 
 ```java
