@@ -52,7 +52,7 @@ void example() {
 </div>
 </details>
 
-3번째 문제를 조금 풀어서 이야기하자면 `r.nextInt()`의 범위는 `Integer.MIN_VALUE`부터 `Integer.MAX_VALUE`까지의 난수를 생성합니다.
+3번째 문제를 조금 풀어서 이야기하자면 `r.nextInt()`의 범위는 `Integer.MIN_VALUE`부터 ㅍ`Integer.MAX_VALUE`까지의 난수를 생성합니다.
 일반적으로 `xx % n`를 사용하는건 0 ~ n-1를 값을 사용하기 위한이며, `Math.abs()`는 음수를 양수로 바꾸기 위해 사용합니다.
 이때 `Math.abs(-2,147,483,648)` 값이 생성되면 이 값은 절댓값으로 바꿀 수 없는 문제가 발생합니다. 왜냐하면 `int`의 범위인 32비트 정수 범위를 벗어나기 때문입니다.
 
