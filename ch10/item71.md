@@ -1,0 +1,52 @@
+### ✅ 필요 없는 검사 예외 사용은 피하라
+
+#### 해당 책에 나오는 용어 정리
+
+- 검사 예외 = `Checked Exception`
+- 비검사 예외 = `Uncheck Exception`
+
+`Checked Exception`를 싫어하는 개발자들이 많지만, 올바르게 사용하면 API와 프로그램의 품질을 향상시킬 수 있습니다.
+결과를 코드로 변환하거나 언체크 예외를 던지는 방식과 달리, 체크 예외는 발생한 문제를 프로그래머가 직접 처리할 수 있게 하여 신뢰성을 높여줍니다.
+물론 이를 과도하게 사용하면 오히려 사용하기 어려운 API가 될 수 있으므로, 상황에 맞게 신중하게 적용하는 것이 중요합니다.
+
+```java
+public class Item71Example {
+
+    // Checked Exception를 던지는 메서드
+    public static String readFirstLine(String path) throws IOException {
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            return br.readLine();
+        }
+    }
+
+    public static void main(String[] args) {
+        List<String> paths = List.of("a.txt", "b.txt", "c.txt");
+
+        // Java 8 Stream에서 사용하는 경우
+        // readFirstLine()은 체크 예외를 던지므로, 예외를 처리해야 됨
+        // 컴파일 오류 발생: "unhandled exception: java.io.IOException"
+        // 따라서 다음처럼 try-catch로 감싸는 람다를 작성해야 함 → 코드가 복잡해짐
+        paths.stream()
+                .map(path -> {
+                    try {
+                        return readFirstLine(path);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e); // Uncheck Exception로 감싸서 우회
+                    }
+                })
+                .forEach(System.out::println);
+    }
+}
+```
+
+- **Checked Exception:** 컴파일러가 확인을 강제하는 예외이며, 복구 가능하거나 외적인 상황(파일 입출력, 네트워크 통신)에서 발생할 것으로 예상되는 문제에 사용
+    - 예외 처리 방법
+        - `try-catch` 블록을 사용하여 예외를 붙잡아 처리
+        - `throws` 키워드를 사용하여 자신을 호출한 상위 메서드로 예외를 전파
+- **Uncheck Exception:** 컴파일러가 확인을 강제하지 않는 예외
+    - 주로 프로그래머의 실수로 인해 발생하는 예외
+
+`Checked Exception` 메서드를 사용할 때는 `try-catch`로 예외를 직접 처리하거나 `throws` 키워드를 사용해 상위 호출자에게 예외를 전파해야 하므로,
+API 사용자는 예외 처리 방식을 명확히 인지해야 하는 부담을 가지게 됩니다.  
+특히, Java 8 이후의 스트림(Stream) API 환경에서는 체크 예외를 직접 사용할 수 없다는 제약 때문에 코드가 복잡해집니다.
+
