@@ -127,7 +127,7 @@ public final class StringList implements Serializable {
          * 실제 데이터(e.data)**인 문자열만 순서대로 스트림에 기록
          */
         for (Entry e = head; e != null; e = e.next) {
-           stream.writeObject(e.data);
+            stream.writeObject(e.data);
         }
     }
 
@@ -208,4 +208,3 @@ JDK가 계산하는 기본값에 의존하면, 사소한 구현 변경에도 UID
 #### 추가 정보
 
 기본 직렬화를 사용한다면 `transient` 필드들은 역직렬화될 때 기본값으로 초기화 됨
-
