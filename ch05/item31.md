@@ -72,6 +72,7 @@ public class Application {
 #### 오류 해결: `? extends T` 사용
 
 ```java
+// 문제 코드
 public class Stack<E> {
     private List<E> elements;
 
