@@ -82,5 +82,3 @@ public static void main(String[] args) {
 </div>
 </details>
 
-질문
-for문 바깥에 선언된 변수도 사용할 수 있는데 바깥에 선언하면 위에 말은 말이 안되는 거 아니냐??
