@@ -137,7 +137,3 @@ public class PowerSet {
 `AbstractCollection`을 활용해 커스텀 컬렉션을 만들 때 `contains()`와 `size()` 메서드를 구현하는 것이 중요합니다.
 이 메서드들을 효율적으로 구현하는 것이 어렵다면, `Stream`이나 `Iterable`을 반환하는 것이 더 나은 선택일 수 있습니다.
 
-질문
-Steam은 Iterable 인터페이스를 상속 받지 않아서 for-each 문에서 사용 못한다고 하는데 스트림에 forEach 메소드랑 무슨 차이가 있는거지??
-
-for-each 문은 종료 시점을 컨트롤 할 수 있는데 forEach 메소드는 컨트롤 못하는 차이점이 있는건가??
