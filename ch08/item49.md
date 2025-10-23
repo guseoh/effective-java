@@ -160,10 +160,3 @@ private static void sort(long a[], int offset, int length) {
     // ...
 }
 ```
-
-질문
-책에 public, protected에는 자바독으로 문서화 해야 되는데 왜? private 메소드에는 필요없는 거야??
-
-답변
-private는 캡슐화가 된 코드이기 때문에 외부에서 사용할 수 없는 코드임 즉, 외부에서 사용할 필요가 없기 때문에 굳이 할 필요가 없음
-하지만 개인적으로 private도 자바독으로 문서화하는 관행도 좋은 관행 같음
