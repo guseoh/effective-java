@@ -50,14 +50,14 @@
 
 | 아이템                                                                                                 | 담당자 | 질문 여부 |
 |:----------------------------------------------------------------------------------------------------|:----|:------|
-| [아이템 26. 로 타입은 사용하지 말라](https://github.com/peeljunKim/effective-java/discussions/97)                | 오지훈 |       |
-| [아이템 27. 비검사 경고를 제거하라](https://github.com/peeljunKim/effective-java/discussions/98)                 | 김필준 |       |
-| [아이템 28. 배열보다는 리스트를 사용하라](https://github.com/peeljunKim/effective-java/discussions/99)              | 오지훈 |       |
-| [아이템 29. 이왕이면 제네릭 타입으로 만들라](https://github.com/peeljunKim/effective-java/discussions/100)           | 김필준 |       |
-| [아이템 30. 이왕이면 제네릭 메서드로 만들라](https://github.com/peeljunKim/effective-java/discussions/101)           | 오지훈 |       |
-| [아이템 31. 한정적 와일드카드를 사용해 API 유연성을 높이라](https://github.com/peeljunKim/effective-java/discussions/102) | 김필준 |       |
-| [아이템 32. 제네릭과 가변인수를 함께 쓸 떄는 신중하라](https://github.com/peeljunKim/effective-java/discussions/103)     | 오지훈 |       |
-| [아이템 33. 타입 안전 이종 컨테이너를 고려하라](https://github.com/peeljunKim/effective-java/discussions/104)         | 김필준 |       |
+| [아이템 26. 로 타입은 사용하지 말라](https://github.com/peeljunKim/effective-java/discussions/97)                | 오지훈 | X     |
+| [아이템 27. 비검사 경고를 제거하라](https://github.com/peeljunKim/effective-java/discussions/98)                 | 김필준 | X     |
+| [아이템 28. 배열보다는 리스트를 사용하라](https://github.com/peeljunKim/effective-java/discussions/99)              | 오지훈 | X     |
+| [아이템 29. 이왕이면 제네릭 타입으로 만들라](https://github.com/peeljunKim/effective-java/discussions/100)           | 김필준 | X     |
+| [아이템 30. 이왕이면 제네릭 메서드로 만들라](https://github.com/peeljunKim/effective-java/discussions/101)           | 오지훈 | X     |
+| [아이템 31. 한정적 와일드카드를 사용해 API 유연성을 높이라](https://github.com/peeljunKim/effective-java/discussions/102) | 김필준 | X     |
+| [아이템 32. 제네릭과 가변인수를 함께 쓸 떄는 신중하라](https://github.com/peeljunKim/effective-java/discussions/103)     | 오지훈 | O     |
+| [아이템 33. 타입 안전 이종 컨테이너를 고려하라](https://github.com/peeljunKim/effective-java/discussions/104)         | 김필준 | O     |
 
 ## 6장. 열거 타입과 애너테이션
 
