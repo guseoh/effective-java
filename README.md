@@ -88,65 +88,65 @@
 
 | 아이템                                                                                                  | 담당자 | 질문 여부 |
 |:-----------------------------------------------------------------------------------------------------|:----|:------|
-| [아이템 49. 매개변수가 유효한지 검사하라](https://github.com/peeljunKim/effective-java/discussions/120)              | 김필준 |       |
-| [아이템 50. 적시에 방어적 복사본을 만들라](https://github.com/peeljunKim/effective-java/discussions/121)             | 오지훈 |       |
-| [아이템 51. 메서드 시그니처를 신중히 설계하라](https://github.com/peeljunKim/effective-java/discussions/122)           | 김필준 |       |
-| [아이템 52. 다중정의는 신중히 사용하라](https://github.com/peeljunKim/effective-java/discussions/123)               | 오지훈 |       |
-| [아이템 53. 가변인수는 신중히 사용하라](https://github.com/peeljunKim/effective-java/discussions/124)               | 김필준 |       |
-| [아이템 54. null이 아닌 빈 컬렉션이나 배열을 반환하라](https://github.com/peeljunKim/effective-java/discussions/125)    | 오지훈 |       |
-| [아이템 55. 옵셔널 반환은 신중히 하라](https://github.com/peeljunKim/effective-java/discussions/126)               | 김필준 |       |
-| [아이템 56. 공개된 API 요소에는 항상 문서화 주석을 작성하라](https://github.com/peeljunKim/effective-java/discussions/127) | 오지훈 |       |
+| [아이템 49. 매개변수가 유효한지 검사하라](https://github.com/peeljunKim/effective-java/discussions/120)              | 김필준 | O     |
+| [아이템 50. 적시에 방어적 복사본을 만들라](https://github.com/peeljunKim/effective-java/discussions/121)             | 오지훈 | O     |
+| [아이템 51. 메서드 시그니처를 신중히 설계하라](https://github.com/peeljunKim/effective-java/discussions/122)           | 김필준 | O     |
+| [아이템 52. 다중정의는 신중히 사용하라](https://github.com/peeljunKim/effective-java/discussions/123)               | 오지훈 | O     |
+| [아이템 53. 가변인수는 신중히 사용하라](https://github.com/peeljunKim/effective-java/discussions/124)               | 김필준 | X     |
+| [아이템 54. null이 아닌 빈 컬렉션이나 배열을 반환하라](https://github.com/peeljunKim/effective-java/discussions/125)    | 오지훈 | O     |
+| [아이템 55. 옵셔널 반환은 신중히 하라](https://github.com/peeljunKim/effective-java/discussions/126)               | 김필준 | X     |
+| [아이템 56. 공개된 API 요소에는 항상 문서화 주석을 작성하라](https://github.com/peeljunKim/effective-java/discussions/127) | 오지훈 | X     |
 
 ## 9️장. 일반적인 프로그래밍 원칙
 
 | 아이템                                                                                                     | 담당자 | 질문 여부 |
 |:--------------------------------------------------------------------------------------------------------|:----|:------|
-| [아이템 57. 지역변수의 범위를 최소화하라](https://github.com/peeljunKim/effective-java/discussions/128)                 | 김필준 |       |
-| [아이템 58. 전통적인 for 문보다는 for-each 문을 사용하라](https://github.com/peeljunKim/effective-java/discussions/129)  | 오지훈 |       |
-| [아이템 59. 라이브러리를 익히고 사용하라](https://github.com/peeljunKim/effective-java/discussions/130)                 | 김필준 |       |
-| [아이템 60. 정확한 답이 필요하다면 float와 double은 피하라](https://github.com/peeljunKim/effective-java/discussions/131) | 오지훈 |       |
-| [아이템 61. 박싱된 기본 타입보다는 기본 타입을 사용하라](https://github.com/peeljunKim/effective-java/discussions/132)        | 김필준 |       |
-| [아이템 62. 다른 타입이 적절하다면 문자열 사용을 피하라](https://github.com/peeljunKim/effective-java/discussions/133)        | 오지훈 |       |
-| [아이템 63. 문자열 연결은 느리니 주의하라](https://github.com/peeljunKim/effective-java/discussions/134)                | 김필준 |       |
-| [아이템 64. 객체는 인터페이스를 사용해 참조하라](https://github.com/peeljunKim/effective-java/discussions/135)             | 오지훈 |       |
-| [아이템 65. 리플렉션보다는 인터페이스를 사용하라](https://github.com/peeljunKim/effective-java/discussions/136)             | 김필준 |       |
-| [아이템 66. 네이티브 메서드는 신중히 사용하라](https://github.com/peeljunKim/effective-java/discussions/137)              | 오지훈 |       |
-| [아이템 67. 최적화는 신중히 하라](https://github.com/peeljunKim/effective-java/discussions/138)                     | 김필준 |       |
-| [아이템 68. 일반적으로 통용되는 명명 규칙을 따르라](https://github.com/peeljunKim/effective-java/discussions/139)           | 오지훈 |       |
+| [아이템 57. 지역변수의 범위를 최소화하라](https://github.com/peeljunKim/effective-java/discussions/128)                 | 김필준 | O     |
+| [아이템 58. 전통적인 for 문보다는 for-each 문을 사용하라](https://github.com/peeljunKim/effective-java/discussions/129)  | 오지훈 | X     |
+| [아이템 59. 라이브러리를 익히고 사용하라](https://github.com/peeljunKim/effective-java/discussions/130)                 | 김필준 | X     |
+| [아이템 60. 정확한 답이 필요하다면 float와 double은 피하라](https://github.com/peeljunKim/effective-java/discussions/131) | 오지훈 | X     |
+| [아이템 61. 박싱된 기본 타입보다는 기본 타입을 사용하라](https://github.com/peeljunKim/effective-java/discussions/132)        | 김필준 | X     |
+| [아이템 62. 다른 타입이 적절하다면 문자열 사용을 피하라](https://github.com/peeljunKim/effective-java/discussions/133)        | 오지훈 | X     |
+| [아이템 63. 문자열 연결은 느리니 주의하라](https://github.com/peeljunKim/effective-java/discussions/134)                | 김필준 | X     |
+| [아이템 64. 객체는 인터페이스를 사용해 참조하라](https://github.com/peeljunKim/effective-java/discussions/135)             | 오지훈 | X     |
+| [아이템 65. 리플렉션보다는 인터페이스를 사용하라](https://github.com/peeljunKim/effective-java/discussions/136)             | 김필준 | X     |
+| [아이템 66. 네이티브 메서드는 신중히 사용하라](https://github.com/peeljunKim/effective-java/discussions/137)              | 오지훈 | O     |
+| [아이템 67. 최적화는 신중히 하라](https://github.com/peeljunKim/effective-java/discussions/138)                     | 김필준 | X     |
+| [아이템 68. 일반적으로 통용되는 명명 규칙을 따르라](https://github.com/peeljunKim/effective-java/discussions/139)           | 오지훈 | X     |
 
 ## 10장. 예외
 
 | 아이템                                                                                                                   | 담당자 | 질문 여부 |
 |:----------------------------------------------------------------------------------------------------------------------|:----|:------|
-| [아이템 69. 예외는 진짜 예외 상황에만 사용하라](https://github.com/peeljunKim/effective-java/discussions/140)                           | 김필준 |       |
-| [아이템 70. 복구할 수 있는 상황에는 검사 예외를, 프로그래밍 오류에는 런타임 예외를 사용하라](https://github.com/peeljunKim/effective-java/discussions/141) | 오지훈 |       |
-| [아이템 71. 필요 없는 검사 예외 사용은 피하라](https://github.com/peeljunKim/effective-java/discussions/142)                           | 김필준 |       |
-| [아이템 72. 표준 예외를 사용하라](https://github.com/peeljunKim/effective-java/discussions/143)                                   | 오지훈 |       |
-| [아이템 73. 추상화 수준에 맞는 예외를 던져라](https://github.com/peeljunKim/effective-java/discussions/144)                            | 김필준 |       |
-| [아이템 74. 메서드가 던지는 모든 예외를 문서화하라](https://github.com/peeljunKim/effective-java/discussions/145)                         | 오지훈 |       |
-| [아이템 75. 예외의 상세 메시지에 실패 관련 정보를 담으라](https://github.com/peeljunKim/effective-java/discussions/146)                     | 김필준 |       |
-| [아이템 76. 가능한 한 실패 원자적으로 만들라](https://github.com/peeljunKim/effective-java/discussions/147)                            | 오지훈 |       |
-| [아이템 77. 예외를 무시하지 말라](https://github.com/peeljunKim/effective-java/discussions/148)                                   | 김필준 |       |
+| [아이템 69. 예외는 진짜 예외 상황에만 사용하라](https://github.com/peeljunKim/effective-java/discussions/140)                           | 김필준 | X     |
+| [아이템 70. 복구할 수 있는 상황에는 검사 예외를, 프로그래밍 오류에는 런타임 예외를 사용하라](https://github.com/peeljunKim/effective-java/discussions/141) | 오지훈 | X     |
+| [아이템 71. 필요 없는 검사 예외 사용은 피하라](https://github.com/peeljunKim/effective-java/discussions/142)                           | 김필준 | X     |
+| [아이템 72. 표준 예외를 사용하라](https://github.com/peeljunKim/effective-java/discussions/143)                                   | 오지훈 | O     |
+| [아이템 73. 추상화 수준에 맞는 예외를 던져라](https://github.com/peeljunKim/effective-java/discussions/144)                            | 김필준 | X     |
+| [아이템 74. 메서드가 던지는 모든 예외를 문서화하라](https://github.com/peeljunKim/effective-java/discussions/145)                         | 오지훈 | X     |
+| [아이템 75. 예외의 상세 메시지에 실패 관련 정보를 담으라](https://github.com/peeljunKim/effective-java/discussions/146)                     | 김필준 | X     |
+| [아이템 76. 가능한 한 실패 원자적으로 만들라](https://github.com/peeljunKim/effective-java/discussions/147)                            | 오지훈 | X     |
+| [아이템 77. 예외를 무시하지 말라](https://github.com/peeljunKim/effective-java/discussions/148)                                   | 김필준 | X     |
 
 ## 11장. 동시성
 
 | 아이템                                                                                                      | 담당자 | 질문 여부 |
 |:---------------------------------------------------------------------------------------------------------|:----|:------|
-| [아이템 78. 공유 중인 가변 데이터는 동기화해 사용하라](https://github.com/peeljunKim/effective-java/discussions/149)          | 오지훈 |       |
-| [아이템 79. 과도한 동기화는 피하라](https://github.com/peeljunKim/effective-java/discussions/150)                     | 김필준 |       |
-| [아이템 80. 스레드보다는 실행자, 태스크, 스트림을 애용하라](https://github.com/peeljunKim/effective-java/discussions/151)       | 오지훈 |       |
-| [아이템 81. wait 과 notify 보다는 동시성 유틸리티를 이용하라](https://github.com/peeljunKim/effective-java/discussions/152) | 김필준 |       |
-| [아이템 82. 스레드 안전성 수준을 문서화하라](https://github.com/peeljunKim/effective-java/discussions/153)                | 오지훈 |       |
-| [아이템 83. 지연 초기화는 신중히 사용하라](https://github.com/peeljunKim/effective-java/discussions/154)                 | 김필준 |       |
-| [아이템 84. 프로그램의 동작을 스레드 스케줄러에 기대지 말라](https://github.com/peeljunKim/effective-java/discussions/155)       | 오지훈 |       |
+| [아이템 78. 공유 중인 가변 데이터는 동기화해 사용하라](https://github.com/peeljunKim/effective-java/discussions/149)          | 오지훈 | X     |
+| [아이템 79. 과도한 동기화는 피하라](https://github.com/peeljunKim/effective-java/discussions/150)                     | 김필준 | X     |
+| [아이템 80. 스레드보다는 실행자, 태스크, 스트림을 애용하라](https://github.com/peeljunKim/effective-java/discussions/151)       | 오지훈 | X     |
+| [아이템 81. wait 과 notify 보다는 동시성 유틸리티를 이용하라](https://github.com/peeljunKim/effective-java/discussions/152) | 김필준 | X     |
+| [아이템 82. 스레드 안전성 수준을 문서화하라](https://github.com/peeljunKim/effective-java/discussions/153)                | 오지훈 | X     |
+| [아이템 83. 지연 초기화는 신중히 사용하라](https://github.com/peeljunKim/effective-java/discussions/154)                 | 김필준 | O     |
+| [아이템 84. 프로그램의 동작을 스레드 스케줄러에 기대지 말라](https://github.com/peeljunKim/effective-java/discussions/155)       | 오지훈 | O     |
 
 ## 1️2장. 직렬화
 
 | 아이템                                                                                                                 | 담당자 | 질문 여부 |
 |:--------------------------------------------------------------------------------------------------------------------|:----|:------|
-| [아이템 85. 자바 직렬화의 대안을 찾으라](https://github.com/peeljunKim/effective-java/discussions/156)                             | 김필준 |       |
-| [아이템 86. Serializable 을 사용할 지는 신중히 결정하라](https://github.com/peeljunKim/effective-java/discussions/157)              | 오지훈 |       |
-| [아이템 87. 커스텀 직렬화 형태를 고려해보라](https://github.com/peeljunKim/effective-java/discussions/158)                           | 김필준 |       |
-| [아이템 88. readObject 메서드는 방어적으로 작성하라](https://github.com/peeljunKim/effective-java/discussions/159)                  | 오지훈 |       |
-| [아이템 89. 인스턴스 수를 통제해야 한다면 readResolve보다는 열거 타입을 사용하라](https://github.com/peeljunKim/effective-java/discussions/160) | 김필준 |       |
-| [아이템 90. 직렬화된 인스턴스 대신 직렬화 프록시 사용을 검토하라](https://github.com/peeljunKim/effective-java/discussions/161)               | 오지훈 |       |
+| [아이템 85. 자바 직렬화의 대안을 찾으라](https://github.com/peeljunKim/effective-java/discussions/156)                             | 김필준 | O     |
+| [아이템 86. Serializable 을 사용할 지는 신중히 결정하라](https://github.com/peeljunKim/effective-java/discussions/157)              | 오지훈 | X     |
+| [아이템 87. 커스텀 직렬화 형태를 고려해보라](https://github.com/peeljunKim/effective-java/discussions/158)                           | 김필준 | X     |
+| [아이템 88. readObject 메서드는 방어적으로 작성하라](https://github.com/peeljunKim/effective-java/discussions/159)                  | 오지훈 | X     |
+| [아이템 89. 인스턴스 수를 통제해야 한다면 readResolve보다는 열거 타입을 사용하라](https://github.com/peeljunKim/effective-java/discussions/160) | 김필준 | X     |
+| [아이템 90. 직렬화된 인스턴스 대신 직렬화 프록시 사용을 검토하라](https://github.com/peeljunKim/effective-java/discussions/161)               | 오지훈 | O     |
