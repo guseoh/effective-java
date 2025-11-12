@@ -103,7 +103,7 @@
     - asType 형태로 짓는다.
     - ex) asList 등
 - 객체의 값을 기본 타입 값으로 반환하는 메서드
-    - 보통 typeValue 혀앹로 짓는다.
+    - 보통 typeValue 형태로 짓는다.
     - ex) intValue 등
 - 정적 팩터리
     - 다양하지만 from, of, valueOf, instance, getInstance, newInstance, getType, newType(아이템 1)을 흔히 사용한다.

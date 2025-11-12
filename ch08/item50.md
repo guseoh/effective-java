@@ -5,7 +5,7 @@
 
 하지만 다른 클래스로부터의 침범을 아무런 노력 없이 다 막을 수 있는 건 아니다. 프로그래머의 실수로 인해 **의도하지 않는 변경**이 일어날 수 있다. **외부에 의해 불변식이 깨질 수 있다**는 뜻이다.
 
-일반적으로 객체를 생성할 때 수정자와 같은 장치가 없다면 욉에서 내부를 수정하는 것을 막아놨음을 의미한다. 하지만 **자기도 모르게 내부를 수정하도록 허락**하는 경우가 생긴다.
+일반적으로 객체를 생성할 때 수정자와 같은 장치가 없다면 외부에서 내부를 수정하는 것을 막아놨음을 의미한다. 하지만 **자기도 모르게 내부를 수정하도록 허락**하는 경우가 생긴다.
 
 <br>
 
@@ -23,7 +23,7 @@ public final class Period {
     */
     public Period(Date start, Date end) {
         if(start.compareTo(end) > 0) 
-            throw new IllegalArgumentException(
+            throw new IllegalArgumentException( 
                 start + "가 " + end + "보다 늦다.");
                 
         this.start = start;
