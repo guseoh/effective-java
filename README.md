@@ -63,14 +63,14 @@
 
 | 아이템                                                                                                      | 담당자 | 질문 여부 |
 |:---------------------------------------------------------------------------------------------------------|:----|:------|
-| [아이템 34. int 상수 대신 열거 타입을 사용하라](https://github.com/peeljunKim/effective-java/discussions/105)            | 오지훈 |       |
-| [아이템 35. ordinal 메서드 대신 인스턴스 필드를 사용하라](https://github.com/peeljunKim/effective-java/discussions/106)     | 김필준 |       |
-| [아이템 36. 비트 필드 대신 EnumSet을 사용하라](https://github.com/peeljunKim/effective-java/discussions/107)           | 오지훈 |       |
-| [아이템 37. ordinal 인덱싱 대신 EnumMap을 사용하라](https://github.com/peeljunKim/effective-java/discussions/108)     | 김필준 |       |
-| [아이템 38. 확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라](https://github.com/peeljunKim/effective-java/discussions/109) | 오지훈 |       |
-| [아이템 39. 명명 패턴보다 애너테이션을 사용하라](https://github.com/peeljunKim/effective-java/discussions/110)              | 김필준 |       |
-| [아이템 40. @Override 애너테이션을 일관되게 사용하라](https://github.com/peeljunKim/effective-java/discussions/111)       | 오지훈 |       |
-| [아이템 41. 정의하려는 것이 타입이라면 마커 인터페이스를 사용하라](https://github.com/peeljunKim/effective-java/discussions/112)    | 김필준 |       |
+| [아이템 34. int 상수 대신 열거 타입을 사용하라](https://github.com/peeljunKim/effective-java/discussions/105)            | 오지훈 | X     |
+| [아이템 35. ordinal 메서드 대신 인스턴스 필드를 사용하라](https://github.com/peeljunKim/effective-java/discussions/106)     | 김필준 | X     |
+| [아이템 36. 비트 필드 대신 EnumSet을 사용하라](https://github.com/peeljunKim/effective-java/discussions/107)           | 오지훈 | O     |
+| [아이템 37. ordinal 인덱싱 대신 EnumMap을 사용하라](https://github.com/peeljunKim/effective-java/discussions/108)     | 김필준 | X     |
+| [아이템 38. 확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라](https://github.com/peeljunKim/effective-java/discussions/109) | 오지훈 | O     |
+| [아이템 39. 명명 패턴보다 애너테이션을 사용하라](https://github.com/peeljunKim/effective-java/discussions/110)              | 김필준 | O     |
+| [아이템 40. @Override 애너테이션을 일관되게 사용하라](https://github.com/peeljunKim/effective-java/discussions/111)       | 오지훈 | O     |
+| [아이템 41. 정의하려는 것이 타입이라면 마커 인터페이스를 사용하라](https://github.com/peeljunKim/effective-java/discussions/112)    | 김필준 | X     |
 
 ## 7장. 람다와 스트림
 
