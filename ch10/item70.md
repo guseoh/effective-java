@@ -135,7 +135,7 @@ class Service {
 
 - `throws SQLException, ConnectException` 처럼 예외를 던지는 부분을 코드에 선언하는 것이 왜 문제일까?
     - 서비스, 컨트롤러에서 `java.sql.SQLException`을 의존하기 때문에 문제가 된다.
-- 향후 SQLException이 아니라 JPAException으로 예외바 변경된다면 어떻게 될까?
+- 향후 SQLException이 아니라 JPAException으로 예외가 변경된다면 어떻게 될까?
     - SQLException에 의존하던 모든 서비스, 컨트롤러의 코드를 JPAException에 의존하도록 고쳐야 한다.
 - **서비스나 컨트롤러 입장에서는 본인이 처리할 수도 없는 예외를 의존해야 하는 큰 단점이 발생하게 된다.**
 - 결과적으로 OCP, DI를 통해 클라이언트 코드의 변경 없이 대상 구현체를 변경할 수 있다는 장점이 체크 예외 때문에 발목을 잡게 된다.
