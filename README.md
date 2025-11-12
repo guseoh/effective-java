@@ -76,13 +76,13 @@
 
 | 아이템                                                                                            | 담당자 | 질문 여부 |
 |:-----------------------------------------------------------------------------------------------|:----|:------|
-| [아이템 42. 익명 클래스보다는 람다를 사용하라](https://github.com/peeljunKim/effective-java/discussions/113)     | 오지훈 |       |
-| [아이템 43. 람다보다는 메서드 참조를 사용하라](https://github.com/peeljunKim/effective-java/discussions/114)     | 김필준 |       |
-| [아이템 44. 표준 함수형 인터페이스를 사용하라](https://github.com/peeljunKim/effective-java/discussions/115)     | 오지훈 |       |
-| [아이템 45. 스트림은 주의해서 사용하라](https://github.com/peeljunKim/effective-java/discussions/116)         | 김필준 |       |
-| [아이템 46. 스트림에서는 부작용 없는 함수를 사용하라](https://github.com/peeljunKim/effective-java/discussions/117) | 오지훈 |       |
-| [아이템 47. 반환 타입으로는 스트림보다 컬렉션이 낫다](https://github.com/peeljunKim/effective-java/discussions/118) | 김필준 |       |
-| [아이템 48. 스트림 병렬화는 주의해서 적용하라](https://github.com/peeljunKim/effective-java/discussions/119)     | 오지훈 |       |
+| [아이템 42. 익명 클래스보다는 람다를 사용하라](https://github.com/peeljunKim/effective-java/discussions/113)     | 오지훈 | O     |
+| [아이템 43. 람다보다는 메서드 참조를 사용하라](https://github.com/peeljunKim/effective-java/discussions/114)     | 김필준 | X     |
+| [아이템 44. 표준 함수형 인터페이스를 사용하라](https://github.com/peeljunKim/effective-java/discussions/115)     | 오지훈 | Xgi   |
+| [아이템 45. 스트림은 주의해서 사용하라](https://github.com/peeljunKim/effective-java/discussions/116)         | 김필준 | O     |
+| [아이템 46. 스트림에서는 부작용 없는 함수를 사용하라](https://github.com/peeljunKim/effective-java/discussions/117) | 오지훈 | O     |
+| [아이템 47. 반환 타입으로는 스트림보다 컬렉션이 낫다](https://github.com/peeljunKim/effective-java/discussions/118) | 김필준 | O     |
+| [아이템 48. 스트림 병렬화는 주의해서 적용하라](https://github.com/peeljunKim/effective-java/discussions/119)     | 오지훈 | O     |
 
 ## 8장. 메서드
 
