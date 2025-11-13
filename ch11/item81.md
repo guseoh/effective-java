@@ -82,7 +82,7 @@ public class Item81 {
 
 #### 번외
 
-추가적으로 일부 동시서 컬렉션 메소드는 작업이 성공적을 완료될 때까지 기다리도록 설계되었습니다. 예를 들어, `BlockingQueue.take()`
+추가적으로 일부 동시성 컬렉션 메소드는 작업이 성공적을 완료될 때까지 기다리도록 설계되었습니다. 예를 들어, `BlockingQueue.take()`
 
 ### 동기화 장치 - Synchronizer
 
