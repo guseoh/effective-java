@@ -148,5 +148,5 @@
 | [아이템 86. Serializable 을 사용할 지는 신중히 결정하라](https://github.com/peeljunKim/effective-java/discussions/157)              | 오지훈 | O     |
 | [아이템 87. 커스텀 직렬화 형태를 고려해보라](https://github.com/peeljunKim/effective-java/discussions/158)                           | 김필준 | X     |
 | [아이템 88. readObject 메서드는 방어적으로 작성하라](https://github.com/peeljunKim/effective-java/discussions/159)                  | 오지훈 | X     |
-| [아이템 89. 인스턴스 수를 통제해야 한다면 readResolve보다는 열거 타입을 사용하라](https://github.com/peeljunKim/effective-java/discussions/160) | 김필준 | X     |
+| [아이템 89. 인스턴스 수를 통제해야 한다면 readResolve보다는 열거 타입을 사용하라](https://github.com/peeljunKim/effective-java/discussions/160) | 김필준 | O     |
 | [아이템 90. 직렬화된 인스턴스 대신 직렬화 프록시 사용을 검토하라](https://github.com/peeljunKim/effective-java/discussions/161)               | 오지훈 | O     |
